@@ -20,11 +20,47 @@ The purpose of this project is to practice **database design, importing data, an
 
 
 
-## SQL Queries
+## **🔹 Project Objectives**
+- To design and implement a relational database for an online bookstore.  
+- To practice SQL commands such as **DDL (Data Definition Language)** and **DML (Data Manipulation Language)**.  
+- To perform **data analysis** on dummy bookstore data (Books, Customers, Orders).  
+- To strengthen skills in writing **basic and advanced SQL queries**.  
+- To simulate **real-world database operations** like stock management, customer insights, and revenue calculation.  
+
+---
+
+## **🔹 Project Outcomes**
+- Built a fully functional **Online Bookstore Database** using **MySQL**.  
+- Successfully imported **dummy data** (Books, Customers, Orders) using the **MySQL Import Wizard**.  
+- Practiced **SQL queries** ranging from beginner to advanced.  
+- Learned to handle tasks like:
+  - Finding best-selling books.  
+  - Calculating total revenue.  
+  - Tracking customer purchases.  
+  - Analyzing inventory and stock levels.  
+- Improved understanding of **joins, aggregation, grouping, and filtering** in SQL.  
+
+---
+
+## **🔹 Tech Stack**
+- **Database:** MySQL  
+- **Tool Used:** MySQL Workbench (Import Wizard for CSV data)  
+- **Data:** Dummy dataset (Books.csv, Customers.csv, Orders.csv)  
+- **Language:** SQL  
+
+---
+
+## **🔹 Author**
+👩 **Sunidhi Yadav**  
+📌 Aspiring Data Analyst | Commerce & Data Analytics Enthusiast  
+
+---
+
+## **🔹 SQL Queries**
 
 ```sql
 -- ========================
--- 🔹 Basic Queries
+--  Basic Queries
 -- ========================
 
 -- Question 1: Retrieve all books in the "Fiction" genre
@@ -72,9 +108,6 @@ LIMIT 1;
 -- Question 11: Calculate the total revenue generated from all orders
 SELECT SUM(Total_Amount) AS Revenue 
 FROM Orders;
-
-
----
 
 
 -- ========================
@@ -141,3 +174,6 @@ FROM Books b
 LEFT JOIN Orders o ON b.Book_ID = o.Book_ID
 GROUP BY b.Book_ID 
 ORDER BY b.Book_ID;
+
+
+
